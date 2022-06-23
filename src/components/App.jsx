@@ -1,16 +1,39 @@
+import SomeComponent from './SomeComponent'
+
+import DeepComponent from './DeepComponent';
+
 export const App = () => {
+ 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+
+    <>
+      <h1>Context</h1>
+    
+        <SomeComponent>
+          <SomeComponent>
+          <SomeComponent>
+          <SomeComponent>
+          <SomeComponent>
+          <SomeComponent>
+                  
+
+                  <DeepComponent/> 
+                    
+                    
+                                           
+                      
+                   
+           
+          </SomeComponent>
+          </SomeComponent>
+          </SomeComponent>
+          </SomeComponent>
+          </SomeComponent>
+          </SomeComponent>
+     
+      
+      
+    </>
+    
   );
 };
