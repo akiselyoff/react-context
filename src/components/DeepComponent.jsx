@@ -1,21 +1,17 @@
-import { useContext } from 'react'
-import myContext from '../context/MyContext';
+
+import {  useContext } from "react";
+import someContext from "../context/MyContext";
+
+
 
 const DeepComponent = () => {
-
-    const givenContextFromProvider = useContext(myContext);
-    const { name } = givenContextFromProvider;
-
-    console.log('context in deepComponent: ' + givenContextFromProvider);
+const contextValue = useContext(someContext);
 
     return (
         <>
             <div>DeepComponent text</div>
-        {givenContextFromProvider}
-        
+            {contextValue && 1111111111}
         </>
-        
-            
             
               
     )

@@ -1,39 +1,22 @@
-import SomeComponent from './SomeComponent'
 
+import someContext from '../context/MyContext'
 import DeepComponent from './DeepComponent';
+import SomeComponent from './SomeComponent'
 
 export const App = () => {
  
   return (
 
     <>
-      <h1>Context</h1>
-    
-        <SomeComponent>
-          <SomeComponent>
-          <SomeComponent>
-          <SomeComponent>
-          <SomeComponent>
-          <SomeComponent>
-                  
-
-                  <DeepComponent/> 
-                    
-                    
-                                           
-                      
-                   
-           
-          </SomeComponent>
-          </SomeComponent>
-          </SomeComponent>
-          </SomeComponent>
-          </SomeComponent>
-          </SomeComponent>
-     
+      <someContext.Provider value={10000}>
+          
       
-      
+          <SomeComponent>
+        
+            <DeepComponent/>
+             
+           </SomeComponent>
+        </someContext.Provider>
     </>
-    
   );
 };

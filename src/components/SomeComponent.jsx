@@ -1,10 +1,12 @@
+import DeepComponent from './DeepComponent'
 
-
-const SomeComponent = ({ children }) => {
+const SomeComponent = () => {
     return (
         <>
             <div>TextComponent</div>
-            {children}
+            <DeepComponent />
+           
+           
         </>
         
     )
