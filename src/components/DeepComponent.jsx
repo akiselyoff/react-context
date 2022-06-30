@@ -1,21 +1,15 @@
-
-import {  useContext } from "react";
-import someContext from "../context/MyContext";
-
-
+import { useContext } from 'react';
+import myContext from '../context/MyContext';
 
 const DeepComponent = () => {
-const contextValue = useContext(someContext);
+  const contextValue = useContext(myContext);
 
-    return (
-        <>
-            <div>DeepComponent text</div>
-            {contextValue && 1111111111}
-        </>
-            
-              
-    )
-
-}
+  return (
+    <>
+      <div>DeepComponent text</div>
+      {contextValue}
+    </>
+  );
+};
 
 export default DeepComponent;
